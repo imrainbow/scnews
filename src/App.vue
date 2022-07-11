@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <h1>赛诚科技</h1>
+    <i class="iconfont">&#xe60f;</i>
+    <i class="iconfont sc-lishi"></i>
+    <i class="iconfont">&#xe610;</i>
+    <i class="iconfont sc-shoucang"></i>
+    <i class="iconfont">&#xe611;</i>
+    <i class="iconfont sc-shouye"></i>
+    <i class="iconfont">&#xe613;</i>
+    <i class="iconfont sc-sousuo"></i>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="default">默认按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+    <van-button type="danger">危险按钮</van-button>
+    <div class="box">
+
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.box {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
